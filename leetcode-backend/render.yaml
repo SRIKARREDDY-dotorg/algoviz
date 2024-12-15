@@ -1,9 +1,0 @@
-services:
-  - name: algoviz_core
-    type: web
-    runtime: node
-    buildCommand: |
-      sudo apt-get update
-      sudo apt-get install -y python3 python3-pip
-      npm install
-    startCommand: "node leetcode-backend/src/server.js"
