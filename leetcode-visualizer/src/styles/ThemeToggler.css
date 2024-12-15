@@ -1,0 +1,27 @@
+/* ThemeToggle.css */
+
+/* Button Styles */
+button {
+    background-color: var(--button-background);
+    color: var(--button-text);
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-2px);
+}
+
+/* Responsive styles for theme toggle */
+button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}

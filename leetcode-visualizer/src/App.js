@@ -1,20 +1,24 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import {Dashboard} from "./page/Dashboard";
-import {Home} from "./page/Home";
-import {Visualization} from "./page/Visualization";
+import AlgoVisualizer from "./page/AlgoVisualizer";
 
 function App() {
-  return (
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/visualization" element={<Visualization />} />
-        </Routes>
-      </Router>
-  );
+    return (
+        <Router>
+            <div className="App">
+                <header className="App-header">
+                    <h1>AlgoViz</h1>
+                </header>
+                <div className='main'>
+                    <Routes>
+                        {/* Root path directly renders the AlgoVisualizer */}
+                        <Route path="/" element={<AlgoVisualizer />} />
+                    </Routes>
+                </div>
+            </div>
+        </Router>
+    );
 }
 
 export default App;
