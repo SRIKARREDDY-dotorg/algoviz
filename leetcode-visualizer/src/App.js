@@ -13,9 +13,12 @@ function App() {
                 <div className='main'>
                     <Routes>
                         {/* Root path directly renders the AlgoVisualizer */}
-                        <Route path="/" element={<AlgoVisualizer />} />
+                        <Route path="/" element={<AlgoVisualizer/>}/>
                     </Routes>
                 </div>
+                <footer className="app-footer">
+                    <p>Created by <strong>Srikar Reddy Pochana</strong></p>
+                </footer>
             </div>
         </Router>
     );

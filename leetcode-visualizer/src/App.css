@@ -115,3 +115,13 @@ main {
 .home-page a:hover {
   color: var(--button-hover);
 }
+
+.app-footer {
+  margin-top: 20px;
+  text-align: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 10px 0;
+  font-size: 14px;
+  border-top: 1px solid var(--primary-color);
+}

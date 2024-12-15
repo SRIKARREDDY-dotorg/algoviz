@@ -33,3 +33,17 @@ pre {
     line-height: 1.5;
     margin-top: 20px;
 }
+
+.code-editor {
+    flex: 1;
+    width: 97.8%;
+    background-color: var(--editor-background);
+    color: var(--editor-text);
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    height: 80vh;
+}
