@@ -14,7 +14,7 @@ const AlgoVisualizer = () => {
     const executeCode = async () => {
         try {
             setIsRunning(true);
-            const response = await fetch('http://localhost:5123/api/python/execute', {
+            const response = await fetch('https://algoviz-backend-lkg5.onrender.com/api/python/execute', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ code, input }),

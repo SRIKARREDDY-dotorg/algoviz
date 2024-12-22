@@ -1,11 +1,11 @@
 /* ThemeToggle.css */
 
 /* Button Styles */
-button {
+.toggle-button {
     background-color: var(--button-background);
     color: var(--button-text);
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     padding: 12px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -14,13 +14,13 @@ button {
     margin-top: 10px;
 }
 
-button:hover {
+.toggle-button:hover {
     background-color: var(--button-hover);
     transform: translateY(-2px);
 }
 
 /* Responsive styles for theme toggle */
-button {
+.toggle-button {
     display: inline-flex;
     align-items: center;
     gap: 8px;
