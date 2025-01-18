@@ -4,9 +4,9 @@
   --text-color: #333333;
   --primary-color: #3a86ff;
   --secondary-color: #5c5c5c;
-  --button-background: #3a86ff;
+  --button-background: #464649;
   --button-text: white;
-  --button-hover: #265ecf;
+  --button-hover: #1b1a1a;
   --card-background: #ffffff;
   --card-shadow: rgba(0, 0, 0, 0.1);
   --editor-background: #f0f4fc;
@@ -19,9 +19,9 @@
   --text-color: #dcdcdc;
   --primary-color: #4cc9f0;
   --secondary-color: #aaaaaa;
-  --button-background: #4cc9f0;
+  --button-background: #cfd9dc;
   --button-text: #1e1e1e;
-  --button-hover: #3a9dc7;
+  --button-hover: #fbfbfb;
   --card-background: #2a2a2a;
   --card-shadow: rgba(0, 0, 0, 0.6);
   --editor-background: #252526;

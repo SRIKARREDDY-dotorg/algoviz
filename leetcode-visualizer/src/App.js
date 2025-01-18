@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import AlgoVisualizer from "./page/AlgoVisualizer";
+import ThemeToggle from "./components/ThemeToggler";
 
 function App() {
     return (
@@ -9,6 +10,7 @@ function App() {
             <div className="App">
                 <header className="App-header">
                     <h1>AlgoViz</h1>
+                    <ThemeToggle/>
                 </header>
                 <div className='main'>
                     <Routes>

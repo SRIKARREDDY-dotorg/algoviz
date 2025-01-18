@@ -14,7 +14,6 @@ const CodeEditor = ({ code, setCode }) => {
                 onChange={(value) => setCode(value || '')}
                 options={{
                     fontSize: 14,
-                    theme: 'vs-dark',
                     automaticLayout: true,
                     wordWrap: "on",
                 }}
