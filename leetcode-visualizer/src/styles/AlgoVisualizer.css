@@ -103,6 +103,10 @@
     transform: translateY(-2px);
 }
 
+.dropdown-wrapper {
+    justify-content: space-between;
+}
+
 .editor-header {
     display: flex;
     justify-content: space-between;
@@ -110,11 +114,31 @@
     margin-bottom: 10px;
 }
 
+.editor-theme {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    width: 100px;
+    background-color: var(--editor-background);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.editor-theme:hover {
+    border-color: var(--button-hover);
+    background-color: var(--button-background);
+    color: var(--button-text);
+}
+
 .language-dropdown {
     padding: 8px;
     font-size: 14px;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
+    width: 100px;
     background-color: var(--editor-background);
     color: var(--text-color);
     cursor: pointer;
@@ -123,6 +147,8 @@
 
 .language-dropdown:hover {
     border-color: var(--button-hover);
+    background-color: var(--button-background);
+    color: var(--button-text);
 }
 
 /* Responsiveness for smaller screens */

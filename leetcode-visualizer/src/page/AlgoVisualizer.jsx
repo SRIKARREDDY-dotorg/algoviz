@@ -8,6 +8,7 @@ const AlgoVisualizer = () => {
     const [input, setInput] = useState('');
     const [code, setCode] = useState('');
     const [language, setLanguage] = useState('python');
+    const [editorTheme, setEditorTheme] = useState('light');
 
     const executeCode = async () => {
         try {
@@ -29,16 +30,24 @@ const AlgoVisualizer = () => {
             <div className="left-panel">
                 <div className="editor-header">
                     <h2>Code Editor</h2>
-                    <select
-                        className="language-dropdown"
-                        value={language}
-                        onChange={(e) => setLanguage(e.target.value)}
-                    >
-                        <option value="python">Python</option>
-                    </select>
+                    <div className="dropdown-wrapper">
+                        <select className="editor-theme"
+                                value={editorTheme}
+                                onChange={(e) => setEditorTheme(e.target.value)}>
+                            <option value="light">Light</option>
+                            <option value="vs-dark">Dark</option>
+                        </select>
+                        <select
+                            className="language-dropdown"
+                            value={language}
+                            onChange={(e) => setLanguage(e.target.value)}
+                        >
+                            <option value="python">Python</option>
+                        </select>
+                    </div>
                 </div>
                 <div>
-                    <CodeEditor code={code} setCode={setCode}/>
+                    <CodeEditor code={code} setCode={setCode} theme={editorTheme}/>
                 </div>
             </div>
             <div className='right-panel'>
